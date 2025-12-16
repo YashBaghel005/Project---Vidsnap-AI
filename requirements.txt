@@ -1,0 +1,6 @@
+flask
+requests
+mutagen
+murf-python
+chardet
+werkzeug
