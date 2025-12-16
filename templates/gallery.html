@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery - AI Reel Generator{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container gallery-container">
+    <h1 class="gallery-title">Reel Gallery</h1>
+    <div class="gallery-grid">
+        <!-- Example reels - these would be populated dynamically in a real application -->
+        {% for reel in reels %}
+            <video src="static/reels/{{reel}}" controls></video>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %} 
